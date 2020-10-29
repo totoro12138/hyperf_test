@@ -16,3 +16,8 @@ Router::addRoute(['GET', 'POST', 'HEAD'], '/', 'App\Controller\IndexController@i
 Router::get('/favicon.ico', function () {
     return '';
 });
+
+Router::addRoute(['GET', 'POST', 'HEAD'], '/user/add', 'App\Controller\UserController@add');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/user/delete', 'App\Controller\UserController@delete');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/user/get', 'App\Controller\UserController@get');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/user/info', 'App\Controller\UserController@info');
