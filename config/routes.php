@@ -21,3 +21,5 @@ Router::addRoute(['GET', 'POST', 'HEAD'], '/user/add', 'App\Controller\UserContr
 Router::addRoute(['GET', 'POST', 'HEAD'], '/user/delete', 'App\Controller\UserController@delete');
 Router::addRoute(['GET', 'POST', 'HEAD'], '/user/get', 'App\Controller\UserController@get');
 Router::addRoute(['GET', 'POST', 'HEAD'], '/user/info', 'App\Controller\UserController@info');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/user/getList', 'App\Controller\UserController@getList');
+Router::addRoute(['GET', 'POST', 'HEAD'], '/user/upload', 'App\Controller\UserController@upload');
